@@ -1,0 +1,7 @@
+Options  FollowSymLinks
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/?public/
+RewriteRule .* index.php [L]
